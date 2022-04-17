@@ -22,6 +22,7 @@ export function Upload({onUpload}: UploadProps) {
       <p>File should be Jpeg, Png...</p>
 
       <Dropzone
+        noClick
         maxFiles={1}
         accept="image/*"
         onDropAccepted={onUpload}
